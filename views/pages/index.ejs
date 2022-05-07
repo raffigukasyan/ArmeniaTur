@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs'); %>
+    <main class="main">
+        <section class="intro">
+            <div class="container">
+                <h1 class="intro__title">Двери к <span>армянскому</span> гостеприимству</h1>
+                <div class="catalog">
+                    <article class="article__catalog">
+                        <div class="catalog__top">
+                            <h3 class="catalog__header__title">Проживание</h3>
+                            <a  href="/hotel" class="catalog__header__link">Отели в Ереване</a>
+                            <p class="catalog__header__suptitle">Удобное бронирование отелей в Армении </p>
+                        </div>
+                        <div class="catalog__img catalog__img__calving"></div>
+                    </article>
+                    <article class="article__catalog">
+                        <div class="catalog__top">
+                            <h3 class="catalog__header__title">Экскурсии</h3>
+                            <a  href="/excursions" class="catalog__header__link">Экскурсии по Армении</a>
+                            <p class="catalog__header__suptitle">Мы представляем вашему вниманию 
+                                самый большой выбор однодневных 
+                                экскурсий по Армении.</p>
+                        </div>
+                        <div class="catalog__img catalog__img__excursions"></div>
+                    </article>
+                    <article class="article__catalog">
+                        <div class="catalog__top">
+                            <h3 class="catalog__header__title">Рестораны</h3>
+                            <a  href="/restaurant" class="catalog__header__link">Рестораны в Армении</a>
+                            <p class="catalog__header__suptitle">Разнообразие кухонь и мест времяпровождения на любой
+                                вкус и возраст</p>
+                        </div>
+                        <div class="catalog__img catalog__img__restaurants"></div>
+                    </article>
+                    <article class="article__catalog">
+                        <div class="catalog__top">
+                            <h3 class="catalog__header__title">Фестивали</h3>
+                            <a  href="/attraction" class="catalog__header__link">Фестивали и события</a>
+                            <p class="catalog__header__suptitle">Даты, места проведения,информация о фестивалях исобытиях в Армении</p>
+                        </div>
+                        <div class="catalog__img catalog__img__festivals"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus">
+            <div class="container">
+                <div class="aboutus__wrapper">
+                    <div class="aboutus__content">
+                        <h2 class="aboutus__content__title">О Нас</h2>
+                        <p class="aboutus__content__pre">
+                            Приезжайте в нашу страну за чудесами, если вы в них верите, и <span>ТУРОПЕРАТОР "АРМЕНИЯ ТУР"</span> поможет вам ощутить эти 
+                            чудеса. Мы сделаем Ваше путешествие в Армению ярким, интересным, незабываемым и полным ярких впечатлений.
+                            Армения – идеальное место для самых требовательных 
+                            туристов. Здесь каждый сможет найти себе развлечение
+                            и радость. Армения открыта для всех: любители классической архитектуры полюбуются древним храмом Гарни, монастырями Гегард и Татев, Ахпат и Агарцин. Страна с древней историей 
+                            не растратила свои таланты и умения на создание хачкаров, хачкаров с уникальной резьбой. После прослушивания
+                            дудука кажется, что вы прикоснулись к армянской душе.
+                        </p>
+                    </div>
+                    <img src="img/Armenia.png" alt="" class="aboutus__img">
+                </div>
+            </div>
+        </section>
+        <section class="attraction">
+            <div class="container">
+                <h1 class="attraction__title">Достопримечательности Армении</h1>
+                <p class="attraction__suptitle">Армения богата разнообразными достопримечательностями, и 
+                    ошибочно считать, что достопримечательности Армении ограничиваются лишь церквями и монастырями. Несмотря на то, что Армения по праву считается страной камней, однако помимо скалистых памятников - церквей, монастырей, крепостей и замков, здесь расположились уютные уголки природы, к числу которых можно причислить реки и озера, водопады, горы, леса и заповедники. 
+                </p>
+                <div class="attraction__slider">
+                   <div class="attraction__track">
+                    <div class="attraction__block">
+                        <img src="img/attraction2.png" alt="img" class="attraction__block__img">
+                        <div class="attraction__block__tag">Культурно-исторический</div>
+                        <div class="attraction__block__description">
+                            <h3 class="attraction__block__description__title">Монастырь Нораванк, Монастырь Татев, Канатная дорога  «Крылья Татева»  ...</h3>
+                            <p class="attraction__block__description__suptitle">Во время данной экскурсии предлагаем охватить одни из самых интересных 
+                                достопримечательностей юго-восточной части Армении ...</p>
+                            <p class="attraction__block__description__text">Длительность: 12-13 ч</p>
+                        </div>
+                        <div class="attraction__block__discover">
+                            <div class="attraction__block__discover__price">
+                                <p class="attraction__block__discover__price__people">Цены для 2 человек</p>
+                                <div class="line"></div>
+                                <p class="attraction__block__discover__price__people__cost">71 300 AMD</p>
+                            </div>
+                            <a href="#" class="attraction__block__discover__more">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="attraction__block">
+                        <img src="img/Img2.png" alt="img" class="attraction__block__img">
+                        <div class="attraction__block__tag">Культурно-исторический</div>
+                        <div class="attraction__block__description">
+                            <h3 class="attraction__block__description__title">Монастырь Хор Вирап</h3>
+                            <p class="attraction__block__description__suptitle">Данная короткая экскурсия отлично подходит для наполнения загруженного дня интересным путешествием к подножию г. Арарат, где находится великолепный монастырь 
+                                Хор Вирап, откуда открывается захватывающий дух вид на библейскую гору…</p>
+                            <p class="attraction__block__description__text">Длительность: 12-13 ч</p>
+                        </div>
+                        <div class="attraction__block__discover">
+                            <div class="attraction__block__discover__price">
+                                <p class="attraction__block__discover__price__people">Цены для 2 человек</p>
+                                <div class="line"></div>
+                                <p class="attraction__block__discover__price__people__cost">18 100 AMD</p>
+                            </div>
+                            <a href="#" class="attraction__block__discover__more">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="attraction__block">
+                        <img src="img/Img3.png" alt="img" class="attraction__block__img">
+                        <div class="attraction__block__tag">Воздушно-веревочный</div>
+                        <div class="attraction__block__description">
+                            <h3 class="attraction__block__description__title">Крепость Бжни, Цахкадзорская Канатная Дорога, Монастырь Кечарис, полет на Зиплайне</h3>
+                            <p class="attraction__block__description__suptitle">В рамках этой индивидуальной экскурсии сначала Вы посетите Бжни, увидете монастырь Св. Богородицы, основанный в 1031 году, а также красивую крепость, расположенную на вершине мыса, окруженного неприступными скалами. </p>
+                            <p class="attraction__block__description__text">Длительность: 6-7 ч</p>
+                        </div>
+                        <div class="attraction__block__discover">
+                            <div class="attraction__block__discover__price">
+                                <p class="attraction__block__discover__price__people">Цены для 2 человек</p>
+                                <div class="line"></div>
+                                <p class="attraction__block__discover__price__people__cost">30 600 AMD</p>
+                            </div>
+                            <a href="#" class="attraction__block__discover__more">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="attraction__block">
+                        <img src="img/Img4.png" alt="img" class="attraction__block__img">
+                        <div class="attraction__block__tag">Культурно-исторический</div>
+                        <div class="attraction__block__description">
+                            <h3 class="attraction__block__description__title">Гюмри, Черная Крепость, Музей Народной Архитектуры и Городского Быта</h3>
+                            <p class="attraction__block__description__suptitle">В течение этой индивидуальной экскурсии Вы посетите Гюмри – второй по величине город Армении, один из главных культурных центров республики.
+                                 Недавно в Гюмри построили единственную католическую церковь в Армении.</p>
+                            <p class="attraction__block__description__text">Длительность: 7-8 ч</p>
+                        </div>
+                        <div class="attraction__block__discover">
+                            <div class="attraction__block__discover__price">
+                                <p class="attraction__block__discover__price__people">Цены для 2 человек</p>
+                                <div class="line"></div>
+                                <p class="attraction__block__discover__price__people__cost">41 100 AMD</p>
+                            </div>
+                            <a href="#" class="attraction__block__discover__more">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="attraction__block">
+                        <img src="img/Img5.png" alt="img" class="attraction__block__img">
+                        <div class="attraction__block__tag">Культурно-исторический</div>
+                        <div class="attraction__block__description">
+                            <h3 class="attraction__block__description__title">Дилижан, Монастырь Агарцин, Монастырь Гошаванк, Озеро Парз</h3>
+                            <p class="attraction__block__description__suptitle">Во время этой индивидуальной экскурсии Вы посетите Дилижан, именуемый также «Маленькая Швейцария в Армении» за фантастические природные леса. 
+                                Город является частью Дилижанского национального парка. </p>
+                            <p class="attraction__block__description__text">Длительность: 8-9 ч</p>
+                        </div>
+                        <div class="attraction__block__discover">
+                            <div class="attraction__block__discover__price">
+                                <p class="attraction__block__discover__price__people">Цены для 2 человек</p>
+                                <div class="line"></div>
+                                <p class="attraction__block__discover__price__people__cost">42 100 AMD</p>
+                            </div>
+                            <a href="#" class="attraction__block__discover__more">Узнать подробнее</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+                <button class="btn-prev">&#10094;</button>
+                <button class="btn-next" >&#10095;</button>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h1 class="reviews__title">Отзывы</h1>
+                <div class="reviews__slider">
+                    <div class="reviews__track">
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Алиса</h3>
+                            <p class="reviews__block__text">Очень насыщенная программа. За такой короткий срок удалось посмотреть отели и получить впечатления о стране.
+                                Это круто. Большое спасибо за такую замечательную возможность посмотреть Вашу теплую страну.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Николай</h3>
+                            <p class="reviews__block__text">Добрый день, Армине!. Большое спасибо за организованный тур, все было хорошо.
+                                Отдельная благодарность Вашим сотрудникам – водителю Ваагу и гиду Гаяне</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                        <div class="reviews__block">
+                            <img src="img/Group 21.svg" alt="" class="reviews__block__img">
+                            <h3 class="reviews__block__title">Иван</h3>
+                            <p class="reviews__block__text">Мы оказались в Ереване по работе, но захотели увидеть хоть несколько достопримечательностей за пределами Еревана. Обратились в компанию “Армения Тур”, и нам организовали интересный тур в Гарни, Гегард, и на следующий день – на озеро Севан.
+                                Нам подобрали хорошего гида и водителя.
+                                Спасибо большое за предосравленные услуги.</p>
+                        </div>
+                    </div>
+                </div> 
+                <button class="reviews__btn__prev">&#10094;</button>
+                <button class="reviews__btn__next">&#10095;</button>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h1 class="questions__title">Ответы на вопросы</h1>
+                    <ul class="answers__list">
+                        <li class="answers__item">
+                            <div class="answers__item__right"></div>
+                            <h3 class="answers__item__title">Безопасны ли ночные прогулки в Ереване?</h3>
+                            <div class="answers__item__text">Ереван – безопасный, дружелюбный и спокойный город. В 2018 году он занял #36 место среди «50 Самых безопасных городов мира» по версии
+                                 "The Daily Meal" и #7 место в соответствии с Докладом о глобальном правопорядке 2019 года.</div>
+                        </li>
+                        <li class="answers__item">
+                            <div class="answers__item__right"></div>
+                            <h3 class="answers__item__title">Какая валюта в Армении?</h3>
+                            <div class="answers__item__text"> 
+                                Армянская национальная валюта называется «драм» (AMD) и, согласно законодательству, все товары и услуги оплачиваются только в армянских драмах. </div>
+                        </li>
+                        <li class="answers__item">
+                            <div class="answers__item__right"></div>
+                            <h3 class="answers__item__title">Когда можно посмотреть шоу поющих и танцующих фонтанов на Площади Республики?</h3>
+                            <div class="answers__item__text">
+                                Площадь Республики – прекрасное место, чтобы насладиться шоу поющих и танцующих фонтанов. 
+                                С начала мая до середины осени, каждый день кроме вторника (санитарный день) с 20:00 до 23:00, 
+                                Вы можете послушать известные мелодии в оформлении разноцветных световых эффектов.
+                            </div>
+                        </li>
+                        <li class="answers__item">
+                            <div class="answers__item__right"></div>
+                            <h3 class="answers__item__title">Где в Армении Вы бы порекомендовали провести летний/зимний отпуск?</h3>
+                            <div class="answers__item__text"> 
+                                Летом в Армении природа достигает своего наивысшего расцвета на Севане, в Дилижане, в Джермуке и в Агверане, тем временем, Цахкадзор и Джермук являются лучшими местами для активного зимнего отдыха и занятий спортом.</div>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+    <%- include('../partials/footer.ejs'); %>
+</body>
+<script src="../js/slider.js"></script>
+<script src="../js/script.js"></script>
+</html>

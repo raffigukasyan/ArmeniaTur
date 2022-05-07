@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% let i = 0 %> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/hotel-1.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs'); %>
+    <main class="main">
+        <section class="intro">
+                <h1 class="intro__title">Бронирование отелей в Армении</h1>
+        </section>
+        <section class="hotel__wrapper">
+            <div class="container">
+                <div class="hotel__cart">
+                    <% while(i < data.length) { %>
+                    <% for(let content of data) { %>  
+                    <div class="hotel__block">
+                        <div class="hotel__left">
+                            <img src="img/<%= content.image %> " alt="" class="hotel__img">
+                            <div class="hotel__left__label">Отель</div>
+                        </div>
+                        <div class="hotel__right">
+                            <h2 class="hotel__title"><%= content.title %> </h2>
+                            <div class="hotel__info">
+                                <div class="hotel__info__left">
+                                    <p class="hotel__info__text"> <span>Город:</span> Ереван</p>
+                                    <p class="hotel__info__text"><span>Растояние:</span> 1.0 км от центра </p>
+                                </div>
+                                <div class="hotel__info__right">
+        
+                                    <div class="hotel__info__line"></div>
+                                    <div class="hotel__info__rating">
+                                        <p class="hotel__info__rating__text">Рейтинг</p>
+                                        <div class="hotel__info__rating__block">6 / 10</div>
+                                    </div>
+                                    <div class="hotel__info__star">
+                                        <p class="star__text">4 звезды</p>
+                                        <div class="stars">
+                                            <img src="img/Star 1.svg" alt="">
+                                            <img src="img/Star 1.svg" alt="">
+                                            <img src="img/Star 1.svg" alt="">
+                                            <img src="img/Star 1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="benefits">
+                                <div class="line"></div>
+                                <ul class="benefits__list">
+                                    <li class="benefits__list__item">Открытый бассейн</li>
+                                    <li class="benefits__list__item">Фитнес центр</li>
+                                    <li class="benefits__list__item">Wi-Fi интернет</li>
+                                    <li class="benefits__list__item">Лифт</li>
+                                    <li class="benefits__list__item">Доступ длинвалидныхя  кресел</li>
+                                    <li class="benefits__list__item">Завтрак</li>
+                                    <li class="benefits__list__item">Отличное расположение</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <% i++ } %> 
+                    <% } %> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

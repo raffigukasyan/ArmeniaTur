@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #dcdcdc 50%, #fff 50%);
+}
+
+.auth {
+    background-color: #fff;
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 0 15px 5px #c3c3c3;
+}
+
+.form {
+    margin-top: 120px;
+}
+
+.input-data {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.input-data input {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 12px;
+    background-color: transparent;
+    border-bottom: 2px solid #dcdcdc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.input-data input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.input-data input::selection {
+    background-color: #cdcdcd;
+    color: #000;
+}
+
+.input-btn {
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="auth">
+        <form  method="POST" action="/admin" class="form">
+            <div class="input-data">
+                <input type="text" id="login" name="login" placeholder="введите логин" required>
+            </div> 
+            <div class="input-data">
+                <input type="password" id="password" name="password" placeholder="введите пароль" required>
+            </div>     
+            <div class="input-data">
+                <input type="submit" id="submit" value="Войти" class="input-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

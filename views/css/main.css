@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sedan-sc');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.logo {
+    width: 100%;
+    position: relative;
+    top: 8px;
+}
+
+body {
+    font-family: 'Rubik', 'Roboto';
+    font-size: 16px;
+    color: #000;
+}
+
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/restaurant-1.css">
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main class="main">
+        <section class="intro">
+            <h1 class="intro__title">Рестораны в Армении</h1>
+        </section>
+        <section class="restaurant__wrapper">
+            <div class="container">
+                <div class="restaurant__cart">
+                    <% data.forEach(item => { %> 
+                    <div class="restaurant__block">
+                        <div class="restaurant__block__top">
+                            <div class="restaurant__block__img">
+                                <img src="img/<%= item.image %> " alt="" class="restaurant__img">
+                            </div>
+                            <div class="restaurant__block__content">
+                                <h2 class="restaurant__block__title"><%= item.title  %> </h2>
+                                <p class="restaurant__block__subtitile"><%= item.description %> </p>
+                                <div class="restaurant__block__line"></div>
+                                <p class="restaurant__block__time"><span>Рабочые часы: </span> 10:00 - 00:00</p>
+                                <!-- <p class="restaurant__block__address"><span>Адрес: </span> Ереван, пр. Саят-Новы, 15</p> -->
+                            </div>
+                        </div>
+                        <div class="restaurant__block__bottom">
+                            <div class="restaurant__block__info">
+                                <div class="restaurant__block__types">
+                                    <span>Тип:</span>
+                                    <div class="restaurant__block__types-cart">Ресторан</div>
+                                    <div class="restaurant__block__types-cart">Таверна</div>
+                                    <div class="restaurant__block__types-cart">Стейк Хаус</div>
+                                    <div class="restaurant__block__types-cart">Пиццерия</div>
+                                    <div class="restaurant__block__types-cart">Винный дом</div>
+                                </div>
+                                <div class="restaurant__block__kitchen">
+                                    <span>Кухня:</span>
+                                    <div class="restaurant__block__kitchen-cart">Армянская</div>
+                                    <div class="restaurant__block__kitchen-cart">Кавказская</div>
+                                    <div class="restaurant__block__kitchen-cart">Вегетиранская</div>
+                                </div>
+                            </div>
+                            <div class="restaurant__block__info-line"></div>
+                            <div class="restaurant__block__tages">
+                                <ul class="restaurant__block__tages-list">
+                                    <li class="restaurant__tages__link">Wi-Fi</li>
+                                    <li class="restaurant__tages__link">Живая музыка</li>
+                                    <li class="restaurant__tages__link">Доставка</li>
+                                    <li class="restaurant__tages__link">Зал для некурящих</li>
+                                    <li class="restaurant__tages__link">Завтрак</li>
+                                    <li class="restaurant__tages__link">Обед</li>
+                                    <li class="restaurant__tages__link">Ужин</li>
+                                    <li class="restaurant__tages__link">Отдельный зал</li>
+                                    <li class="restaurant__tages__link">Банкетный зал</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %> 
+                </div>
+            </div>
+        </section>
+    </main>    
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

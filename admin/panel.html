@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(147, 218, 218);
+    }
+</style>
+<body>
+    <div class="hotel">
+        <form action="/panel" method="post">
+            <div class="input__data">
+                <select name="cart" id="cart">
+                    <option value="hotel">Отель</option>
+                    <option value="excursion">Экскурсии</option>
+                    <option value="restaurant">Ресторан</option>
+                    <option value="attraction">Достопримечательности</option>
+                </select>
+            </div>
+            <div class="input__data">
+                <label for="title">Загаловок</label>
+                <input type="text" name="title" id="title">
+            </div>
+
+            <div class="input__data">
+                <label for="description">Описание</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="input__data">
+                <input type="file" name="file">
+            </div>
+            <div class="input__data">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

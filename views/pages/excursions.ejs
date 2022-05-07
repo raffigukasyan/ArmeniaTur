@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/excursions-1.css">
+    <title>Экскурсии</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main class="main">
+        <section class="intro">
+            <h1 class="intro__title">Экскурсии по  Армении</h1>
+        </section>
+        <section class="excursions__wrapper">
+            <div class="container">
+                <div class="excursions__cart">
+                    <% data.forEach( item => { %> 
+                    <div class="excursion__block">
+                        <div class="excursion__top">
+                            <div class="excursion__top__img">
+                                <img src="img/<%= item.image  %> " alt="" class="excursion__img">
+                                <div class="excursion__day">Полный день</div>
+                                <div class="excursion__label">Культурно-исторический</div>
+                            </div>
+                            <div class="excursion__top__content">
+                                <h2 class="excursion__title"><%= item.title %> </h2>
+                                <p class="excursion__suptitle"><%= item.description %> </p>
+                                    <p class="excursion__info"><span>Длительность:</span> 6 - 7 ч</p>
+                            </div>
+                        </div>
+                        <div class="excursion__bottom">
+                            <div class="excursion__bottom__left">
+                                <p class="excursion__people">Цена для 2 человек</p>
+                                <p class="excursion__price">32 300 AMD</p>
+                            </div>
+                            <div class="excursion__bottom__right">
+                                <a href="#" class="excursion__bottom__link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %> 
+                </div>
+            </div>
+        </section>   
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

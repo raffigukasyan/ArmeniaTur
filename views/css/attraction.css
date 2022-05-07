@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sedan-sc');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', 'Roboto';
+    font-size: 16px;
+    color: #000;
+}
+
+
+.wrapper {
+    max-width: 1110px;
+    margin:  100px auto;
+}
+
+.attraction__block {
+    width: 260px;
+    background: rgba(248, 248, 248, 0.35);
+    box-shadow: 7px 10px 7px #706d653b;
+    border-radius: 11px 11px 0px 0px;
+}
+
+.attraction__block__top {
+    position: relative;
+}
+
+.attraction__img__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 24px;
+    position: absolute;
+    top: -5px;
+    left: 18px;
+    background-image: url('../img/head.svg');
+    background-repeat: no-repeat;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.attraction__img__label-right {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-family: 'Rubik';
+    font-size: 11px;
+    color: #333333;
+    padding: 6px 6px; 
+    background-color: #F9C853;
+    border-radius: 3px;
+}
+
+.attraction__block__bottom {
+    padding: 10px 20px 35px 20px;
+}
+
+.attraction__block__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.attraction__block__location {
+    display: inline-block;
+    font-family: 'Rubik';
+    background-image: url('../img/location.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    font-size: 13px;
+    line-height: 13px;
+    color: #5A89BD;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.attraction__block__info-km {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.attraction__block__line {
+    width: 222px;
+    height: 1px;
+    background-color: #E1DFDF;
+    margin-bottom: 15px;
+}
+
+.attraction__block__title {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 20px;
+    min-height: 50px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.attraction__block__subtitle {
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 300;
+    color: #5D6772;
+    min-height: 90px;
+    margin-bottom: 15px;
+}
+
+.attraction__block__entry {
+    font-family: 'Rubik';
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.attraction__block__entry span {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}

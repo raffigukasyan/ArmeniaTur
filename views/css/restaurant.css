@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sedan-sc');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', 'Roboto';
+    font-size: 16px;
+    color: #000;
+}
+
+
+.wrapper {
+    max-width: 1110px;
+    margin:  100px auto;
+}
+
+.restaurant__block {
+    width: 900px;
+    height: 370px;
+    background: #F1F1F1;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.restaurant__block__top {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.restaurant__block__content {
+    padding: 20px 60px 0px 20px;
+}
+
+.restaurant__block__title {
+    min-height: 40px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+}
+
+.restaurant__block__subtitile {
+    font-family: 'Rubik';
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D6772;
+    min-height: 75px;
+}
+
+.restaurant__block__line {
+    width: 520px;
+    height: 2px;
+    background-color: #E1DFDF;
+    margin-bottom: 15px;
+}
+
+.restaurant__block__time {
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5D6772;
+    margin-bottom: 25px;
+}
+
+.restaurant__block__time span {
+    font-weight: 500;
+}
+
+.restaurant__block__address {
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5D6772;
+}
+
+.restaurant__block__address span {
+    font-weight: 500;
+}
+
+.restaurant__block__bottom {
+    padding: 0px 20px;
+}
+
+.restaurant__block__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.restaurant__block__types, .restaurant__block__kitchen {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant__block__types span, .restaurant__block__kitchen span {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    color: #5D6772;
+    margin-right: 10px;
+}
+
+.restaurant__block__types-cart {
+    font-family: 'Rubik';
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #CE1728;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+.restaurant__block__types-cart:not(:last-child) {
+    margin-right: 15px;
+}
+
+.restaurant__block__kitchen-cart {
+    font-family: 'Rubik';
+    font-size: 12px;
+    color: #333333;
+    background: #F9C853;
+    border-radius: 3px;
+    padding: 5px 7px;
+}
+
+.restaurant__block__kitchen-cart:not(:last-child) {
+    margin-right: 15px;
+}
+
+.restaurant__block__info-line {
+    max-width: 825px;
+    height: 2px;
+    background-color: #E1DFDF;
+    margin-bottom: 20px;
+}
+
+.restaurant__block__tages-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.restaurant__tages__link {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: #333333;
+    padding-left: 20px;
+    background-image: url('../img/gal.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 7px;
+}
